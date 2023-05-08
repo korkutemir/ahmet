@@ -23,7 +23,11 @@ module.exports = {
       "http": require.resolve("stream-http"),
       "net": false,
       "os": require.resolve("os-browserify/browser"),
-      "buffer": false
+      "buffer": false,
+      "assert": false,
+      "querystring": false,
+      "url": false,
+      "util": false 
     }
   }
 };
