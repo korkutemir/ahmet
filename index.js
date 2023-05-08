@@ -17,7 +17,7 @@ const path = require('path');
 // Enable CORS for all routes
 app.use(cors());
 // Connect to MongoDB with Mongoose
-mongoose.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://ahmetcankur07:Uw01RSljdLwdJBGy@b2cbages.nvxpgfy.mongodb.net/B2cPages?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
 
