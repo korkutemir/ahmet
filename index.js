@@ -71,6 +71,9 @@ const LocationsModel = mongoose.model("LocationsModel", Locations);
 
 
 /////////////////////////////////////////////////////////////////////////////
+app.get('/',function(req,res) {
+    res.sendFile( __dirname + "/" + "index.html");
+});
 
 // Define GET method to get a specific B2cPage by ID
 app.get('/b2cpagesbase64/:name', async (req, res) => {
@@ -95,6 +98,7 @@ app.get('/b2cpagesbase64', async (req, res) => {
     res.status(500).send(err.message);
   }
 });
+
 
 // Define POST method to add new B2cPage
 app.post('/b2cpagesbase64', async (req, res) => {
