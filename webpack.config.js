@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './app.js', // projenin giriş noktası
+  entry: './index.js', // projenin giriş noktası
   output: {
     filename: 'bundle.js', // çıktı dosyası adı
     path: path.resolve(__dirname, 'dist') // çıktı dosyasının konumu
