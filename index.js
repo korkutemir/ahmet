@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 app.use(express.json({ limit: '500mb' }));
 
-const port = process.env.Port_Url;
+const port = process.env.PORT || 8000;
 const mongoURL = process.env.MONGO_URL;
 
 const cors = require('cors');
