@@ -22,7 +22,8 @@ module.exports = {
       "zlib": require.resolve("browserify-zlib"),
       "http": require.resolve("stream-http"),
       "net": false,
-      "os": require.resolve("os-browserify/browser")
+      "os": require.resolve("os-browserify/browser"),
+      "buffer": false
     }
   }
 };
